@@ -18,6 +18,7 @@ public class Worker {
                     i = i/0;
                 } catch (Exception e) {
                     errorCallback.onError("Ошибка! " + e);
+                    continue;
                 }
             }
             callback.onDone("Task " + i + " is done");
